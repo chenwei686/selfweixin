@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="self-commom" />
+        <module name="self-manager-mapper" />
+        <module name="self-manager-pojo" />
+        <module name="self-manager-service" />
+        <module name="self-manager-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="self-commom" target="1.8" />
+      <module name="self-manager" target="1.8" />
+      <module name="self-manager-mapper" target="1.8" />
+      <module name="self-manager-pojo" target="1.8" />
+      <module name="self-manager-service" target="1.8" />
+      <module name="self-manager-web" target="1.8" />
+      <module name="self-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

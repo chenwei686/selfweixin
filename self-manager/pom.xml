@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>self-parent</artifactId>
+        <groupId>com.self</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../self-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>self-manager</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>../self-manager-pojo</module>
+        <module>../self-manager-mapper</module>
+        <module>../self-manager-service</module>
+        <module>../self-manager-web</module>
+    </modules>
+    <dependencies>
+
+        <dependency>
+            <groupId>com.self</groupId>
+            <artifactId>self-commom</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+
+            <!-- 配置Tomcat插件 -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <port>8080</port>
+                    <path>/</path>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+</project>
